@@ -93,4 +93,4 @@ conn.logger.level = 'debug'
 
 #### Powered By : [`XTEAM`](https://api.xteam.xyz)
 
-#### Author / Creator : [`Nurutomo`](https://GitHub.com/Nurutomo)
+#### Author / Creator : [`Kabir`](https://GitHub.com/Kabir0704)
