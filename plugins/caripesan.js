@@ -15,7 +15,7 @@ let handler = async (m, { conn, text }) => {
     }
 }
 
-handler.help = ['caripesan <pesan>|<jumlah>']
+handler.help = ['caripesan <pesan>|<amount>']
 handler.tags = ['tools']
 
 handler.command = /^caripesan/i

@@ -9,7 +9,7 @@ let d = new Date
  let [teks, wm] = text.split('|')
 await conn.sendFile(m.chat, global.API('xteam', '/quotemaker', { text, wm: conn.getName(m.sender) }, 'APIKEY'), 'nulis.jpg', 'Maker kamu sudah jadi..\n╰ Follow Me: *instagram.com/arpunchs*', m)
 }
-handler.help = ['quote'].map(v => v + 'maker (tulisan)|(name)')
+handler.help = ['quote'].map(v => v + 'maker (Author)|(name)')
 handler.tags = ['nulis']
 handler.command = /^quotemaker$/i
 handler.owner = false

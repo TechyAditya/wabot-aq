@@ -30,13 +30,13 @@ const defaultMenu = {
 ╭─「 %me 」
 │ Hi, %name!
 │
-│ Tersisa *%limit Limit*
+│ Remaining *%limit Limit*
 │ Level *%level (%exp / %maxexp)* [%xp4levelup again for levelup]
 │ %totalexp XP in Total
 │ 
-│ Tanggal: *%week %weton, %date*
-│ Tanggal Islam: *%dateIslamic*
-│ Waktu: *%time*
+│ Date: *%week %weton, %date*
+│ Date Islam: *%dateIslamic*
+│ Time: *%time*
 │
 │ Uptime: *%uptime (%muptime)*
 │ Database: %rtotalreg of %totalreg
@@ -64,7 +64,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     // Offset -420 is 18.00
     // Offset    0 is  0.00
     // Offset  420 is  7.00
-    let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
+    let weton = ['Disgusting', 'Happy', 'Exhausting', 'workholic', 'Lazy'][Math.floor(d / 84600000) % 5]
     let week = d.toLocaleDateString(locale, { weekday: 'long' })
     let date = d.toLocaleDateString(locale, {
       day: 'numeric',
