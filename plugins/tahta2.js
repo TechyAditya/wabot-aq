@@ -5,8 +5,8 @@ let { spawn } = require('child_process')
 // HartA tahta Xteam
 let handler  = async (m, { conn, text }) => {
   let d = new Date
-  let tgl = d.toLocaleDateString('id-Id')
-  let hari = d.toLocaleDateString('id-Id', { weekday: 'long' })
+  let tgl = d.toLocaleDateString('us-Us')
+  let hari = d.toLocaleDateString('us-Us', { weekday: 'long' })
  text,
 await conn.sendFile(m.chat, global.API('xteam', '/tahta', { text, }, 'APIKEY'), 'Harta Tahta.png', 'Nih udah jadi Harta tahtamu...\n *_Tetap Support:_* *Drawl Nag*', m)
 }

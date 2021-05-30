@@ -26,7 +26,7 @@ handler.command = /^getsider$/
 
 module.exports = handler
 
-function formatDate(n, locale = 'id') {
+function formatDate(n, locale = 'us') {
   let d = new Date(n)
   return d.toLocaleDateString(locale, {
     weekday: 'long',

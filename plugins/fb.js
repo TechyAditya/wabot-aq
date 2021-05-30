@@ -26,7 +26,7 @@ let handler = async (m, { conn, args }) => {
   let caption = `
 Content${isFamilyFriendly ? ' ' : ' *No* '}Family Friendly
 Post by ${name} (${authorname || ''}) (${authorlink || ''})
-Posted on ${new Date(uploadDate).toLocaleDateString('id', dateConfig)}
+Posted on ${new Date(uploadDate).toLocaleDateString('us', dateConfig)}
 Size: ${contentSize || unknown}
 Duration: ${clockString(+ new Date(duration))}
 Genre: ${genre || none}

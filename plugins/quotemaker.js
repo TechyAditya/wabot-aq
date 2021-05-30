@@ -4,8 +4,8 @@ let { spawn } = require('child_process')
 
 let handler  = async (m, { conn, text }) => {
 let d = new Date
-  let tgl = d.toLocaleDateString('id-Id')
-  let hari = d.toLocaleDateString('id-Id', { weekday: 'long' })
+  let tgl = d.toLocaleDateString('us-Us')
+  let hari = d.toLocaleDateString('us-Us', { weekday: 'long' })
  let [teks, wm] = text.split('|')
 await conn.sendFile(m.chat, global.API('xteam', '/quotemaker', { text, wm: conn.getName(m.sender) }, 'APIKEY'), 'nulis.jpg', 'Maker kamu sudah jadi..\n╰ Follow Me: *instagram.com/arpunchs*', m)
 }

@@ -34,8 +34,7 @@ const defaultMenu = {
 │ Level *%level (%exp / %maxexp)* [%xp4levelup again for levelup]
 │ %totalexp XP in Total
 │ 
-│ Date: *%week %weton, %date*
-│ Date Islam: *%dateIslamic*
+│ Date: *%date*
 │ Time: *%time*
 │
 │ Uptime: *%uptime (%muptime)*
@@ -59,7 +58,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
     let name = conn.getName(m.sender)
     let d = new Date(new Date + 3600000)
-    let locale = 'id'
+    let locale = 'us'
     // d.getTimeZoneOffset()
     // Offset -420 is 18.00
     // Offset    0 is  0.00

@@ -8,8 +8,8 @@ let handler  = async (m, { conn, args }) => {
   let inputPath ='src/kertas/magernulis1.jpg'
   let outputPath = 'tmp/hasil.jpg'
   let d = new Date
-  let tgl = d.toLocaleDateString('id-Id')
-  let hari = d.toLocaleDateString('id-Id', { weekday: 'long' })
+  let tgl = d.toLocaleDateString('us-Us')
+  let hari = d.toLocaleDateString('us-Us', { weekday: 'long' })
   let teks = args.join` `
   // conn.reply(m.chat, util.format({fontPath, inputPath, outputPath, tgl, hari, teks}), m)
   spawn('convert', [
